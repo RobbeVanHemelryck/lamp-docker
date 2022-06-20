@@ -32,7 +32,7 @@ RUN docker-php-ext-install pdo pdo_mysql
 
 COPY ./config/php/php.ini /usr/local/etc/php/php.ini
 COPY ./config/vhosts /etc/apache2/sites-enabled
-
+    
 # Enable apache modules
 RUN a2enmod rewrite headers
 
